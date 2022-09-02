@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shourtcut icon" type="image/png" href="./image/tailwind.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shourtcut icon" type="image/png" href="./image/tailwind.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Tailwind</title>
-</head>
-<body class="h-screen flex items-center justify-center bg-gray-200">
-    <div class="max-w-sm mx-auto p-8 bg-white rounded-xl shadow-md space-y-2">
-        <img class="h-40 mx-auto w-[220px] h-[220px] rounded-full ring-4 ring-sky-400" src="./image/1660120973661.jpg" alt="">
-        <div class="text-center space-y-2">
-            <div>
-                <p class="text-lg text-black font-semibold">K M Riaz Uddin</p>
-                <p class="text-gray-500 font-medium">Web Developer</p>
-            </div>
-            <button class="px-4 py-1 border border-purpel-200 rounded-full text-sm text-purpel-600 font-semibold hover:bg-sky-300">Visit Now</button>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+  </head>
+  <body
+    class="h-screen flex items-center justify-center bg-gray-200 dark:bg-gray-800"
+  >
+    <div
+      class="max-w-sm mx-auto p-8 bg-white rounded-xl border shadow-md space-y-2 dark:bg-gray-700 dark:border-gray-600"
+    >
+      <img
+        class="h-40 mx-auto w-[220px] h-[220px] rounded-full ring-4 ring-sky-400"
+        src="./image/1660120973661.jpg"
+        alt=""
+      />
+      <div class="text-center space-y-2">
+        <div>
+          <p class="text-lg text-black font-semibold dark:text-gray-200">
+            K M Riaz Uddin
+          </p>
+          <p class="text-gray-500 font-medium dark:text-gray-300">
+            Web Developer
+          </p>
         </div>
+        <button
+          id="dark-toggle"
+          class="px-4 py-1 border border-purpel-200 rounded-full text-sm text-purpel-600 font-semibold hover:bg-sky-300 dark:text-gray-200 dark:border-gray-600 dark:hover:text-gray-500 transition"
+        >
+          Theme
+        </button>
+      </div>
     </div>
-</body>
+
+    <script src="js/app.js"></script>
+  </body>
 </html>
